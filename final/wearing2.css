@@ -1,0 +1,155 @@
+html, body { margin:0;}
+.container-fluid { padding:0;}
+.content-container {
+    display: flex;
+  }
+  .content-container > * {
+    width: 75%;
+  }
+  .right-content {
+    padding-right: 2em;
+        /* padding:0 10%; */
+        width: 700px;
+  }
+  .left-content {
+    height: 100vh;
+    position: relative;
+  }
+  .left-content > * {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    opacity: 0;
+    visibility: hidden;
+  }
+  figcaption {
+      color:rgb(142, 142, 142);
+    font-size:12px;
+  }
+  @media screen and (max-width: 800px) {
+    .left-content {
+      display: none;
+    }
+    .right-content {
+      padding-left: 15px;
+      
+    }
+  }
+  
+.cover {
+    background-color:black;
+    height: 100vh;
+}
+.cover::before {
+    content: "";
+    background-image: url(images/cover.jpg);
+    background-size: cover;
+    position:absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left:0px;
+    opacity:0.5;
+}
+.cover h1 { 
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 96px;
+    line-height: 128px;
+    text-align: right;
+}
+.cover p {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 45px;
+    text-align: right;
+}
+.item {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding:1em 0;
+}
+.item img {
+    padding: 1em 0;
+}
+.cover p.author {
+    font-size: 24px;
+}
+.intro {
+    height: 100vh;
+    display:grid;
+    align-items: center;
+    
+}
+.intro blockquote { 
+    font-family: 'Cormorant Garamond';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.2em;
+    margin-left: 2em;
+}
+.titlepage {
+    padding-right:2em;
+    width:60%;
+
+}
+.left-content {
+    width: 30%;
+    align-items: center;
+    /* padding: 0 10%; */
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: 700;
+}
+.left-content h3 {
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    text-align: center;
+}
+.left-content h4 {
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 28px;
+    text-align:center;
+}
+.left-content p {
+    font-family: 'PT Sans Caption';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2em;
+}
+
+.right-content h2 {
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 47px;
+    margin-top: 3em;
+}
+.right-content p {
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5em;
+}
+.left-content blockquote { 
+    font-family: 'PT Serif';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 1.3em;
+    text-align: center;
+    padding: 2em 1em;
+}
